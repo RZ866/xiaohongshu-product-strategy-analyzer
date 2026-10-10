@@ -23,7 +23,8 @@
 | 官方Skill validator | PASS | 本机原版quick_validate.py输出Skill is valid! |
 | 官方安装器兼容 | PASS | 真实安装器，HTTP响应仅替换为本地ZIP，根路径/资源复制/安装后运行/重名拒绝通过 |
 | 凭据与发布包 | PASS（有限） | 允许清单+敏感模式扫描无命中，公开图片为原创合成，QA/私有资料排除 |
-| GitHub在线安装/Actions | NOT RUN | 新项目未发布；未擅自推送。工作流仅提供配置 |
+| GitHub在线安装 | PASS | 官方安装器真实下载本仓库到隔离目录；安装后49项测试与六组示例通过 |
+| GitHub Actions | PASS | Windows/Linux × Python3.10/3.12四组测试、示例生成与打包全部通过；[运行记录](https://github.com/RZ866/xiaohongshu-product-strategy-analyzer/actions/runs/38034264741) |
 | WorkBuddy/手机硬件 | NOT RUN | 未在WorkBuddy或实际手机安装测试，手机为浏览器视口 |
 
 ## 前向验证

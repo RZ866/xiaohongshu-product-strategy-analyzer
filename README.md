@@ -15,13 +15,18 @@
 
 ## 安装
 
-本项目当前是本地开发交付，尚未发布新GitHub仓库。
+已发布：[GitHub仓库](https://github.com/RZ866/xiaohongshu-product-strategy-analyzer)。在Codex中直接发送：
+
+```text
+帮我安装这个 Skill：https://github.com/RZ866/xiaohongshu-product-strategy-analyzer
+SKILL.md在仓库根目录，请安装整个目录，名称为 xiaohongshu-product-strategy-analyzer。
+```
 
 Codex本地安装：把完整目录复制到 `$CODEX_HOME/skills/xiaohongshu-product-strategy-analyzer`；未设置CODEX_HOME时为 `~/.codex/skills/xiaohongshu-product-strategy-analyzer`。不要只复制SKILL.md；保留scripts/references/assets。已有同名目录应先检查版本并备份，不盲目覆盖。成功后下一轮调用。
 
 也可把发行ZIP交给宿主说“帮我将这个完整Skill安装到你的技能目录”。是否能写入由宿主权限决定。本轮隔离安装测试结果见[验收记录](references/test-results.md)，没有擅自写入全局目录。
 
-发布到真实仓库后，可在Codex说“帮我安装这个Skill：实际仓库URL，SKILL.md在根目录，path为`.`，名称为`xiaohongshu-product-strategy-analyzer`。”已核查官方安装器参数：根目录需path和明确name；已存在目标会拒绝覆盖。在线安装尚未测试，不存在本项目可用远端安装链接。
+已使用官方安装器从此GitHub仓库在线下载安装到隔离目录，安装后的49项测试和六组示例运行通过。根目录安装使用path为`.`并明确name；已存在目标会拒绝覆盖。该验证没有修改用户的全局技能目录。
 
 WorkBuddy和其他工具：按其实际本地Skill导入机制导入整个目录，需要看图、文件生成和可用执行环境。未做实机验收，不保证所有版本都支持链接安装。
 
