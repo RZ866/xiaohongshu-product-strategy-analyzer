@@ -1,0 +1,450 @@
+{
+  "schema_version": "1.0",
+  "mode": "quick",
+  "demo": true,
+  "evidence": [
+    {
+      "id": "P",
+      "type": "SAMPLE",
+      "source": "虚构样品资料卡",
+      "excerpt": "演示商品：桌面理线夹，硅胶，6枚装，单孔设计。适用线径待实测，不宣称所有桌面均可粘。"
+    },
+    {
+      "id": "N",
+      "type": "SAMPLE",
+      "source": "虚构访谈记录",
+      "excerpt": "演示受访者提到拔下充电线后线头滑到桌后，购买前担心残胶和线径不匹配；不是实际访谈。"
+    },
+    {
+      "id": "C",
+      "type": "SAMPLE",
+      "source": "虚构订单成本单",
+      "excerpt": "每单6枚；预计实收19.9元，进货4元，运费包装4元；可承受测试损失200元，拟支出120元。"
+    },
+    {
+      "id": "R",
+      "type": "OFFICIAL",
+      "source": "演示专用的虚构准入核验记录，不是真实官方规则",
+      "excerpt": "仅用来演示PASS状态的输入结构；未对真实商品准入进行核验。真实使用必须替换为当前实际官方规则及对应商品证明。",
+      "checked_at": "2026-10-10",
+      "url": "https://example.invalid/demo-only"
+    },
+    {
+      "id": "F",
+      "type": "SAMPLE",
+      "source": "虚构履约与样品检查表",
+      "excerpt": "演示供应商确认单件发货与售后地址；演示样品可完成放线取线。残胶与长期老化尚未测试，不可作功效承诺。"
+    }
+  ],
+  "product": {
+    "name": "桌面理线夹 · 原创虚构演示",
+    "fields": {
+      "category": {
+        "text": "普通桌面收纳配件",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "use": {
+        "text": "整理单根线材的放置位置",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "规格": {
+        "text": "6枚装，硅胶，单孔",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "适配": {
+        "text": "线径、表面材质及长期残胶情况待核实",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    }
+  },
+  "summary": {
+    "reason": {
+      "text": "进货成本和当前准入证据缺失，完整利润未知，暂缓经营决策。",
+      "kind": "UNKNOWN",
+      "evidence_ids": []
+    },
+    "biggest_risk": {
+      "text": "线径、桌面材质与残胶问题尚需逐项实测，禁止许诺无痕适配所有桌面。",
+      "kind": "INFERENCE",
+      "evidence_ids": [
+        "P",
+        "F"
+      ]
+    },
+    "direction": {
+      "text": "先测试单人办公桌拔线后的线头归位场景。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "audience": {
+      "text": "经常给手机充电、拔线后需要到桌后找线头的办公桌使用者；在意桌面适配与取放顺手。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "angle": {
+      "text": "主打法为场景教程：拍清楚放线、取线与适用边界；购买理由待实际反馈验证。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "advantages": [
+      {
+        "text": "演示规格为6枚装。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "text": "取线动作适合用近景说明。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "text": "费用未齐，利润优势无法确认。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    ],
+    "risks": [
+      {
+        "text": "残胶与长期稳定性未验证。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "F"
+        ]
+      },
+      {
+        "text": "没有实际销量、搜索量或市场规模数据。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      {
+        "text": "获客与售后费用是假设，实际贡献利润可能不同。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "C"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "text": "取一份样品，测量线径与孔径，并记录桌面材质和取放情况。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "向供应商索要有效资质、发货和售后证明，对照当前官方规则核验。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "核对七项每单费用与200元演示止损预算，再决定是否开展小规模内容测试。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      }
+    ]
+  },
+  "dimensions": {
+    "demand": {
+      "level": 3,
+      "basis": "材料描述了具体线头滑落问题，但样本不能代表市场规模",
+      "positive": [
+        "问题可用一个桌面镜头解释"
+      ],
+      "negative": [
+        "演示访谈不能验证实际需求"
+      ],
+      "missing": [],
+      "improvement": "真实询问目标用户并记录原话",
+      "evidence_ids": [
+        "N"
+      ]
+    },
+    "profit": {
+      "level": null,
+      "basis": "由七项费用计算，主观等级由脚本覆盖",
+      "positive": [
+        "小单可核算变动成本"
+      ],
+      "negative": [
+        "推广与售后均是假设"
+      ],
+      "missing": [
+        "进货成本未知"
+      ],
+      "improvement": "用实际结算替换假设",
+      "evidence_ids": [
+        "C"
+      ]
+    },
+    "operations": {
+      "level": 3,
+      "basis": "小件可以单人拍摄、打包；履约资料齐备的演示条件",
+      "positive": [
+        "无需复杂安装工具"
+      ],
+      "negative": [
+        "适配答疑会占用时间"
+      ],
+      "missing": [],
+      "improvement": "准备线径与表面适配说明",
+      "evidence_ids": [
+        "P",
+        "F"
+      ]
+    },
+    "content": {
+      "level": 3,
+      "basis": "取线、走线和孔径均可近景拍摄",
+      "positive": [
+        "手机即可展示细节"
+      ],
+      "negative": [
+        "没实测前不能宣称牢固不掉"
+      ],
+      "missing": [],
+      "improvement": "同一机位记录步骤而非编造前后效果",
+      "evidence_ids": [
+        "P"
+      ]
+    },
+    "competition": {
+      "level": null,
+      "basis": "只评价样本中的信息表达差异，非蓝海判断",
+      "positive": [
+        "可突出适配边界说明"
+      ],
+      "negative": [
+        "无独家功能和市场份额证据"
+      ],
+      "missing": [
+        "缺少真实竞品对照材料"
+      ],
+      "improvement": "实际补充同价位材料再比较",
+      "evidence_ids": []
+    },
+    "risk": {
+      "level": 3,
+      "basis": "演示准入与履约资料齐备，长期残胶风险仍应披露",
+      "positive": [
+        "非复杂功能日用品的演示案例"
+      ],
+      "negative": [
+        "材质不明桌面不得承诺适用"
+      ],
+      "missing": [],
+      "improvement": "首批记录投诉并停止不适配表面的推荐",
+      "evidence_ids": [
+        "R",
+        "F"
+      ]
+    }
+  },
+  "gates": {
+    "compliance": {
+      "status": "UNKNOWN",
+      "reason": "需要查询当前官方规则；未获取到可核验的准入资料",
+      "evidence_ids": []
+    },
+    "fulfillment": {
+      "status": "PASS",
+      "reason": "演示供应商可单件发货并有售后地址",
+      "evidence_ids": [
+        "F"
+      ]
+    },
+    "sample": {
+      "status": "PASS",
+      "reason": "演示放线取线可完成；长期效果未验证，不承诺",
+      "evidence_ids": [
+        "F"
+      ]
+    }
+  },
+  "budget": {
+    "max_loss": 200,
+    "planned_spend": 120,
+    "evidence_ids": [
+      "C"
+    ]
+  },
+  "scenarios": {
+    "optimistic": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 0.3,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    },
+    "base": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 2,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 0.8,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    },
+    "conservative": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 2,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    }
+  },
+  "price_tests": [
+    16.9,
+    19.9,
+    22.9
+  ],
+  "questions": [
+    "这件商品每单实际进货成本和实收售价是多少？",
+    "能提供当前类目准入与供应商履约资料吗？"
+  ]
+}

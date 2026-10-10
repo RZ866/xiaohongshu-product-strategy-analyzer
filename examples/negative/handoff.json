@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "product": {
+    "name": "理线夹低价包邮方案 · 虚构负利润演示",
+    "fields": {
+      "category": {
+        "text": "普通桌面收纳配件",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "use": {
+        "text": "整理单根线材的放置位置",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "规格": {
+        "text": "6枚装，硅胶，单孔",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "适配": {
+        "text": "线径、表面材质及长期残胶情况待核实",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    }
+  },
+  "decision": {
+    "decision": "C",
+    "label": "暂不推荐",
+    "reasons": [
+      "基准情景单笔贡献利润不为正；当前条件不适合经营"
+    ],
+    "scores": {
+      "demand": {
+        "level": 3,
+        "points": 15.0
+      },
+      "profit": {
+        "level": 0,
+        "points": 0.0
+      },
+      "operations": {
+        "level": 3,
+        "points": 15.0
+      },
+      "content": {
+        "level": 3,
+        "points": 11.25
+      },
+      "competition": {
+        "level": 3,
+        "points": 11.25
+      },
+      "risk": {
+        "level": 3,
+        "points": 7.5
+      }
+    },
+    "assessed_weight": 100,
+    "subtotal": 60.0,
+    "total": 60.0,
+    "profits": {
+      "optimistic": {
+        "complete": true,
+        "missing": [],
+        "contribution": -3.9,
+        "gross": 1.0,
+        "margin": -78.0,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      },
+      "base": {
+        "complete": true,
+        "missing": [],
+        "contribution": -6.4,
+        "gross": 1.0,
+        "margin": -128.0,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      },
+      "conservative": {
+        "complete": true,
+        "missing": [],
+        "contribution": -9.6,
+        "gross": 1.0,
+        "margin": -192.0,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      }
+    },
+    "publish_ready": false
+  },
+  "positioning": {
+    "text": "经常给手机充电、拔线后需要到桌后找线头的办公桌使用者；在意桌面适配与取放顺手。",
+    "kind": "HYPOTHESIS",
+    "evidence_ids": []
+  },
+  "direction": {
+    "text": "先核对成本和实收口径，停止当前低价包邮方案。",
+    "kind": "HYPOTHESIS",
+    "evidence_ids": []
+  },
+  "evidence": [
+    {
+      "id": "P",
+      "type": "SAMPLE",
+      "source": "虚构样品资料卡",
+      "excerpt": "演示商品：桌面理线夹，硅胶，6枚装，单孔设计。适用线径待实测，不宣称所有桌面均可粘。"
+    },
+    {
+      "id": "N",
+      "type": "SAMPLE",
+      "source": "虚构访谈记录",
+      "excerpt": "演示受访者提到拔下充电线后线头滑到桌后，购买前担心残胶和线径不匹配；不是实际访谈。"
+    },
+    {
+      "id": "C",
+      "type": "SAMPLE",
+      "source": "虚构订单成本单",
+      "excerpt": "每单6枚；预计实收5元，进货4元，运费包装4元；可承受测试损失200元，拟支出120元。"
+    },
+    {
+      "id": "R",
+      "type": "OFFICIAL",
+      "source": "演示专用的虚构准入核验记录，不是真实官方规则",
+      "excerpt": "仅用来演示PASS状态的输入结构；未对真实商品准入进行核验。真实使用必须替换为当前实际官方规则及对应商品证明。",
+      "checked_at": "2026-10-10",
+      "url": "https://example.invalid/demo-only"
+    },
+    {
+      "id": "F",
+      "type": "SAMPLE",
+      "source": "虚构履约与样品检查表",
+      "excerpt": "演示供应商确认单件发货与售后地址；演示样品可完成放线取线。残胶与长期老化尚未测试，不可作功效承诺。"
+    },
+    {
+      "id": "M",
+      "type": "SAMPLE",
+      "source": "虚构竞品截图对照说明",
+      "excerpt": "演示对照材料中存在多种理线方案。只能比较信息展示角度，不证明本品独家、市场销量或搜索量。"
+    }
+  ],
+  "boundary": "策略是假设；不把上游判断当作商品事实；不自动调用其他Skill。"
+}

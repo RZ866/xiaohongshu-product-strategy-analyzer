@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0",
+  "mode": "quick",
+  "demo": true,
+  "evidence": [
+    {
+      "id": "IMG",
+      "type": "IMAGE",
+      "source": "原创合成商品资料卡，宿主实际查看",
+      "excerpt": "图中文字：桌面理线夹6枚装；硅胶；单孔；用于整理线材；进货成本、售价、孔径、资质未提供；长期牢固、无残胶未测试。"
+    }
+  ],
+  "product": {
+    "name": "截图中的桌面理线夹 · 初步诊断",
+    "image": "product-card.png",
+    "fields": {
+      "category": {
+        "text": "桌面理线收纳配件",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "use": {
+        "text": "资料卡写明用于整理线材",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "规格": {
+        "text": "资料卡写明6枚装、硅胶、单孔；不是独立材质检测",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "成本售价": {
+        "text": "图片未提供",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      "资质": {
+        "text": "图片未提供",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    }
+  },
+  "summary": {
+    "reason": {
+      "text": "目前只能做初步分析；成本、资质与履约未确认，暂缓经营决策。",
+      "kind": "UNKNOWN",
+      "evidence_ids": []
+    },
+    "biggest_risk": {
+      "text": "无法从图片判断适配和长期残胶效果。",
+      "kind": "INFERENCE",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "direction": {
+      "text": "先观察桌面拔线后线头位置，验证整理需求。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "audience": {
+      "text": "经常在桌面取放充电线且需要固定线头位置的人，真实需求待访谈。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "angle": {
+      "text": "先做孔位与线径适配检查，待样品可用后拍放取步骤。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "advantages": [
+      {
+        "text": "资料卡写明6枚装。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      {
+        "text": "外观可用于解释单孔放线方式。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      {
+        "text": "尚不能确认利润或市场优势。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    ],
+    "risks": [
+      {
+        "text": "成本售价未知。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      {
+        "text": "资质履约未知。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      {
+        "text": "长期效果未测试。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "text": "获取每单实收、进货与其余五项费用。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "索要供应商履约与资质材料，对照当前官方规则。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "拿样测孔径、线径和目标表面，记录结果后再评估。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      }
+    ]
+  },
+  "dimensions": {
+    "demand": {
+      "level": null,
+      "basis": "仅有商品资料图，不能从中确认经营条件",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [
+        "缺少本维关键证据"
+      ],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "profit": {
+      "level": null,
+      "basis": "仅有商品资料图，不能从中确认经营条件",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [
+        "缺少本维关键证据"
+      ],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "operations": {
+      "level": null,
+      "basis": "仅有商品资料图，不能从中确认经营条件",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [
+        "缺少本维关键证据"
+      ],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "content": {
+      "level": 2,
+      "basis": "图中单孔与放线任务可以设计细节展示，实际效果未知",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "competition": {
+      "level": null,
+      "basis": "仅有商品资料图，不能从中确认经营条件",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [
+        "缺少本维关键证据"
+      ],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    },
+    "risk": {
+      "level": null,
+      "basis": "仅有商品资料图，不能从中确认经营条件",
+      "positive": [
+        "可识别商品大致用途"
+      ],
+      "negative": [
+        "没有真实经营与市场验证"
+      ],
+      "missing": [
+        "缺少本维关键证据"
+      ],
+      "improvement": "先补齐与本维相关的真实资料",
+      "evidence_ids": [
+        "IMG"
+      ]
+    }
+  },
+  "gates": {
+    "compliance": {
+      "status": "UNKNOWN",
+      "reason": "单张图不足以核验；准入需要查询当前官方规则",
+      "evidence_ids": []
+    },
+    "fulfillment": {
+      "status": "UNKNOWN",
+      "reason": "单张图不足以核验；准入需要查询当前官方规则",
+      "evidence_ids": []
+    },
+    "sample": {
+      "status": "UNKNOWN",
+      "reason": "单张图不足以核验；准入需要查询当前官方规则",
+      "evidence_ids": []
+    }
+  },
+  "budget": {
+    "max_loss": null,
+    "planned_spend": null,
+    "evidence_ids": []
+  },
+  "scenarios": {
+    "optimistic": {
+      "basis": "图片没有成本与收入信息，保留未知，不创建利润假设",
+      "costs": {
+        "revenue": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "platform_payment": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "acquisition": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "after_sales": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "other": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        }
+      }
+    },
+    "base": {
+      "basis": "图片没有成本与收入信息，保留未知，不创建利润假设",
+      "costs": {
+        "revenue": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "platform_payment": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "acquisition": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "after_sales": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "other": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        }
+      }
+    },
+    "conservative": {
+      "basis": "图片没有成本与收入信息，保留未知，不创建利润假设",
+      "costs": {
+        "revenue": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "purchase": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "shipping_packaging": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "platform_payment": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "acquisition": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "after_sales": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        },
+        "other": {
+          "value": null,
+          "kind": "UNKNOWN",
+          "evidence_ids": []
+        }
+      }
+    }
+  },
+  "price_tests": [],
+  "questions": [
+    "预计每单实际售价和进货成本是多少？",
+    "能否提供供应商资质、发货与售后说明？",
+    "是否已有可供测试的样品？"
+  ]
+}

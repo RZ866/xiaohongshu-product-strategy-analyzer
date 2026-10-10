@@ -1,0 +1,900 @@
+{
+  "schema_version": "1.0",
+  "mode": "deep",
+  "demo": true,
+  "evidence": [
+    {
+      "id": "P",
+      "type": "SAMPLE",
+      "source": "虚构样品资料卡",
+      "excerpt": "演示商品：桌面理线夹，硅胶，6枚装，单孔设计。适用线径待实测，不宣称所有桌面均可粘。"
+    },
+    {
+      "id": "N",
+      "type": "SAMPLE",
+      "source": "虚构访谈记录",
+      "excerpt": "演示受访者提到拔下充电线后线头滑到桌后，购买前担心残胶和线径不匹配；不是实际访谈。"
+    },
+    {
+      "id": "C",
+      "type": "SAMPLE",
+      "source": "虚构订单成本单",
+      "excerpt": "每单6枚；预计实收19.9元，进货4元，运费包装4元；可承受测试损失200元，拟支出120元。"
+    },
+    {
+      "id": "R",
+      "type": "OFFICIAL",
+      "source": "演示专用的虚构准入核验记录，不是真实官方规则",
+      "excerpt": "仅用来演示PASS状态的输入结构；未对真实商品准入进行核验。真实使用必须替换为当前实际官方规则及对应商品证明。",
+      "checked_at": "2026-10-10",
+      "url": "https://example.invalid/demo-only"
+    },
+    {
+      "id": "F",
+      "type": "SAMPLE",
+      "source": "虚构履约与样品检查表",
+      "excerpt": "演示供应商确认单件发货与售后地址；演示样品可完成放线取线。残胶与长期老化尚未测试，不可作功效承诺。"
+    }
+  ],
+  "product": {
+    "name": "桌面理线夹 · 原创虚构演示",
+    "fields": {
+      "category": {
+        "text": "普通桌面收纳配件",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "use": {
+        "text": "整理单根线材的放置位置",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "规格": {
+        "text": "6枚装，硅胶，单孔",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      "适配": {
+        "text": "线径、表面材质及长期残胶情况待核实",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    }
+  },
+  "summary": {
+    "reason": {
+      "text": "缺少竞品对照，暂不判断竞争优势；可在已核验的演示经营条件下谨慎测试。",
+      "kind": "INFERENCE",
+      "evidence_ids": [
+        "C",
+        "F"
+      ]
+    },
+    "biggest_risk": {
+      "text": "线径、桌面材质与残胶问题尚需逐项实测，禁止许诺无痕适配所有桌面。",
+      "kind": "INFERENCE",
+      "evidence_ids": [
+        "P",
+        "F"
+      ]
+    },
+    "direction": {
+      "text": "先测试单人办公桌拔线后的线头归位场景。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "audience": {
+      "text": "经常给手机充电、拔线后需要到桌后找线头的办公桌使用者；在意桌面适配与取放顺手。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "angle": {
+      "text": "主打法为场景教程：拍清楚放线、取线与适用边界；购买理由待实际反馈验证。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "advantages": [
+      {
+        "text": "演示规格为6枚装。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "text": "取线动作适合用近景说明。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "text": "演示每单成本可逐项核算。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "C"
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "text": "残胶与长期稳定性未验证。",
+        "kind": "FACT",
+        "evidence_ids": [
+          "F"
+        ]
+      },
+      {
+        "text": "没有实际销量、搜索量或市场规模数据。",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      {
+        "text": "获客与售后费用是假设，实际贡献利润可能不同。",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "C"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "text": "取一份样品，测量线径与孔径，并记录桌面材质和取放情况。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "向供应商索要有效资质、发货和售后证明，对照当前官方规则核验。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      },
+      {
+        "text": "核对七项每单费用与200元演示止损预算，再决定是否开展小规模内容测试。",
+        "kind": "HYPOTHESIS",
+        "evidence_ids": []
+      }
+    ]
+  },
+  "dimensions": {
+    "demand": {
+      "level": 3,
+      "basis": "材料描述了具体线头滑落问题，但样本不能代表市场规模",
+      "positive": [
+        "问题可用一个桌面镜头解释"
+      ],
+      "negative": [
+        "演示访谈不能验证实际需求"
+      ],
+      "missing": [],
+      "improvement": "真实询问目标用户并记录原话",
+      "evidence_ids": [
+        "N"
+      ]
+    },
+    "profit": {
+      "level": 3,
+      "basis": "由七项费用计算，主观等级由脚本覆盖",
+      "positive": [
+        "小单可核算变动成本"
+      ],
+      "negative": [
+        "推广与售后均是假设"
+      ],
+      "missing": [],
+      "improvement": "用实际结算替换假设",
+      "evidence_ids": [
+        "C"
+      ]
+    },
+    "operations": {
+      "level": 3,
+      "basis": "小件可以单人拍摄、打包；履约资料齐备的演示条件",
+      "positive": [
+        "无需复杂安装工具"
+      ],
+      "negative": [
+        "适配答疑会占用时间"
+      ],
+      "missing": [],
+      "improvement": "准备线径与表面适配说明",
+      "evidence_ids": [
+        "P",
+        "F"
+      ]
+    },
+    "content": {
+      "level": 3,
+      "basis": "取线、走线和孔径均可近景拍摄",
+      "positive": [
+        "手机即可展示细节"
+      ],
+      "negative": [
+        "没实测前不能宣称牢固不掉"
+      ],
+      "missing": [],
+      "improvement": "同一机位记录步骤而非编造前后效果",
+      "evidence_ids": [
+        "P"
+      ]
+    },
+    "competition": {
+      "level": null,
+      "basis": "只评价样本中的信息表达差异，非蓝海判断",
+      "positive": [
+        "可突出适配边界说明"
+      ],
+      "negative": [
+        "无独家功能和市场份额证据"
+      ],
+      "missing": [
+        "缺少真实竞品对照材料"
+      ],
+      "improvement": "实际补充同价位材料再比较",
+      "evidence_ids": []
+    },
+    "risk": {
+      "level": 3,
+      "basis": "演示准入与履约资料齐备，长期残胶风险仍应披露",
+      "positive": [
+        "非复杂功能日用品的演示案例"
+      ],
+      "negative": [
+        "材质不明桌面不得承诺适用"
+      ],
+      "missing": [],
+      "improvement": "首批记录投诉并停止不适配表面的推荐",
+      "evidence_ids": [
+        "R",
+        "F"
+      ]
+    }
+  },
+  "gates": {
+    "compliance": {
+      "status": "PASS",
+      "reason": "仅演示：假设已核验当前规则和商品材料；不代表真实平台准入",
+      "evidence_ids": [
+        "R"
+      ]
+    },
+    "fulfillment": {
+      "status": "PASS",
+      "reason": "演示供应商可单件发货并有售后地址",
+      "evidence_ids": [
+        "F"
+      ]
+    },
+    "sample": {
+      "status": "PASS",
+      "reason": "演示放线取线可完成；长期效果未验证，不承诺",
+      "evidence_ids": [
+        "F"
+      ]
+    }
+  },
+  "budget": {
+    "max_loss": 200,
+    "planned_spend": 120,
+    "evidence_ids": [
+      "C"
+    ]
+  },
+  "scenarios": {
+    "optimistic": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 0.3,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    },
+    "base": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 2,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 0.8,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    },
+    "conservative": {
+      "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。",
+      "costs": {
+        "revenue": {
+          "value": 19.9,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "purchase": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "shipping_packaging": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "platform_payment": {
+          "value": 0.6,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "acquisition": {
+          "value": 4,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "after_sales": {
+          "value": 2,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        },
+        "other": {
+          "value": 0,
+          "kind": "HYPOTHESIS",
+          "evidence_ids": [
+            "C"
+          ]
+        }
+      }
+    }
+  },
+  "price_tests": [
+    16.9,
+    19.9,
+    22.9
+  ],
+  "questions": [],
+  "strategy": {
+    "positioning": {
+      "text": "以适配说明清楚的桌面线头整理配件为定位假设；没有独家功能证据，不宣称优于全部竞品。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "pricing": {
+      "text": "19.9元为演示实收假设。实际定价先核对平台结算、优惠承担与七项费用，再比较用户提供的同规格价格。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "stop_rule": {
+      "text": "达到用户确认的可承受损失上限即暂停新增投入；出现安全/准入/履约阻塞立即暂停；实际单笔贡献持续非正时先重算与整改。无足够数据不因阅读少直接判失败。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "review_rule": {
+      "text": "按同一观察窗口对比自己的不同角度；分开记录曝光、阅读、点击、咨询与真实订单。有效订单样本不足时不估转化率；下一轮只变一个因素。",
+      "kind": "HYPOTHESIS",
+      "evidence_ids": []
+    },
+    "scenes": [
+      {
+        "name": "办公桌充电区",
+        "pain": "拔线后线头滑落",
+        "selling_point": "6枚单孔样品，具体线径和表面适配需实测",
+        "expression": "近景记录放线取线",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "宿舍小桌面",
+        "pain": "线材与书本争位置",
+        "selling_point": "6枚单孔样品，具体线径和表面适配需实测",
+        "expression": "俯拍布局，先量空间",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "床头充电位",
+        "pain": "取线距离与材质不确定",
+        "selling_point": "6枚单孔样品，具体线径和表面适配需实测",
+        "expression": "先做线长和表面适配检查",
+        "evidence_ids": [
+          "P"
+        ]
+      }
+    ],
+    "plays": [
+      {
+        "name": "场景种草型",
+        "why": "问题和动作能同框展示",
+        "audience": "有对应场景并愿意先确认适配的人",
+        "demonstration": "拍线头滑落与放置动作，描述观察而非夸大效果",
+        "materials": "手机、实际样品、目标线材、尺子",
+        "risk": "未经测量不写全适配；未做长期测试不写永不掉落",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "实用教程型",
+        "why": "降低使用步骤的不确定性",
+        "audience": "有对应场景并愿意先确认适配的人",
+        "demonstration": "拍量尺寸、放线和取线顺序",
+        "materials": "手机、实际样品、目标线材、尺子",
+        "risk": "未经测量不写全适配；未做长期测试不写永不掉落",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "功能演示型",
+        "why": "孔位细节可实际检查",
+        "audience": "有对应场景并愿意先确认适配的人",
+        "demonstration": "卡尺量孔径，记录适配与不适配样本",
+        "materials": "手机、实际样品、目标线材、尺子",
+        "risk": "未经测量不写全适配；未做长期测试不写永不掉落",
+        "evidence_ids": [
+          "P"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "痛点观察",
+        "title": "拔掉充电线后，线头该放哪里？",
+        "pain": "线头滑到桌后",
+        "angle": "动作拆解",
+        "cover": "线头、桌沿、手部三个位置同框",
+        "structure": "拍拔线动作→标出线头位置→展示放线方法→说明桌面适配",
+        "placement": "在放线步骤出现商品",
+        "purpose": "验证用户是否主动提到找线头的困扰",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "使用场景",
+        "title": "小书桌的充电区，可以怎么安排？",
+        "pain": "桌面可用位置少",
+        "angle": "空间布局",
+        "cover": "俯拍一张桌面，划出充电与写字区",
+        "structure": "测桌面→画区→摆线→展示取放路径",
+        "placement": "作为充电区可选配件",
+        "purpose": "比较空间布局角度是否带来收藏",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "使用方法",
+        "title": "理线夹怎么放线？先看这几个步骤",
+        "pain": "不知道如何放取线",
+        "angle": "步骤教学",
+        "cover": "手部放线过程分三格",
+        "structure": "核对孔径→局部试用→放线→取线→注意事项",
+        "placement": "每一步展示实际样品",
+        "purpose": "观察教程是否减少操作咨询",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "购买顾虑",
+        "title": "买理线夹前，先确认你的桌面材质",
+        "pain": "担心残胶和不适配",
+        "angle": "适配筛选",
+        "cover": "桌面材质标签与样品并列",
+        "structure": "列材质→说明未测范围→安排隐蔽位置试用→记录移除情况",
+        "placement": "展示边界而非保证无痕",
+        "purpose": "记录材质适配类问题是否集中",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "替代方案",
+        "title": "理线夹、束线带，分别用在哪里？",
+        "pain": "不知道选哪种工具",
+        "angle": "用途对照",
+        "cover": "两类工具与同一根线同框",
+        "structure": "区分固定线头与整理线束→示范步骤→列不适用情况",
+        "placement": "只展示本品实际承担的任务",
+        "purpose": "验证用途对照是否帮助选购",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "日常习惯",
+        "title": "下班收桌面时，充电线放哪一步整理？",
+        "pain": "收桌时容易忘记线材",
+        "angle": "流程嵌入",
+        "cover": "收桌动作顺序卡",
+        "structure": "移开杂物→整理充电区→放线→核查次日取放",
+        "placement": "出现在收桌流程中，不编造个人坚持经历",
+        "purpose": "比较日常流程是否吸引持续关注",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "产品细节",
+        "title": "孔径没看清，理线夹可能买不合适",
+        "pain": "线材粗细不匹配",
+        "angle": "尺寸实测准备",
+        "cover": "卡尺、孔位和线材近景",
+        "structure": "量孔→量线→试放→标明测量误差与结果",
+        "placement": "用样品尺寸说明选择条件",
+        "purpose": "观察尺寸展示是否减少规格咨询",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "价格价值",
+        "title": "一包6枚理线夹，先数清你有几个位置要用",
+        "pain": "担心买多浪费",
+        "angle": "数量预算",
+        "cover": "6枚样品和位置草图",
+        "structure": "数充电位置→估需要数量→核对实付价→计算闲置数量",
+        "placement": "仅按真实6枚规格演示，不做虚假折扣",
+        "purpose": "验证按需购买角度的商品点击表现",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "常见误区",
+        "title": "理线夹不是所有线材问题的答案",
+        "pain": "误以为能整理所有线束",
+        "angle": "用途边界",
+        "cover": "单根线头和大线束对照",
+        "structure": "列任务→示范适用动作→说明不适用任务→替代选择",
+        "placement": "明确本品作用范围",
+        "purpose": "观察边界说明对售前顾虑的影响",
+        "evidence_ids": [
+          "P"
+        ]
+      },
+      {
+        "name": "用户问题",
+        "title": "床头充电线能用理线夹吗？先做适配检查",
+        "pain": "床头表面和线长不确定",
+        "angle": "场景迁移验证",
+        "cover": "床头样板、线长标记、夹子",
+        "structure": "确认材质→量线长→局部试装→记录取放→无结果先不推荐",
+        "placement": "作为待验证方案，不写已实测好用",
+        "purpose": "收集床头场景是否值得单独拍摄的需求",
+        "evidence_ids": [
+          "P"
+        ]
+      }
+    ],
+    "days": [
+      {
+        "goal": "验证商品与风险",
+        "steps": "索要成本单和资质；核验类目；用样品测孔径与目标线径；逐项填写每单费用。",
+        "materials": "样品、尺子、供应商资料、费用单",
+        "done": "成本七项可追溯；准入、履约、样品三门有结论。",
+        "caution": "未确认不采购库存。",
+        "action": "VERIFY",
+        "day": 1,
+        "evidence_ids": [],
+        "blocked_steps": "列出缺失的费用、资质、履约与样品项，向对应来源核实，暂停采购库存。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "定位用户与场景",
+        "steps": "找目标桌面使用者描述找线过程；记录原话；选一个主场景及两个备选。",
+        "materials": "访谈记录、桌面草图",
+        "done": "写出人群、触发动作、顾虑、购买理由各一条。",
+        "caution": "不把少量反馈当市场规模。",
+        "action": "PREPARE",
+        "day": 2,
+        "evidence_ids": [],
+        "blocked_steps": "根据已知用途列人群与场景假设，只整理访谈问题。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "准备上架草稿",
+        "steps": "写三个商品标题；拍规格主图；保持6枚单SKU；核对价格和售后条款。",
+        "materials": "规格表、图片、结算费用",
+        "done": "草稿里的每项属性都有依据，费用复算一致。",
+        "caution": "仅准入确认后人工上架；不会自动提交。",
+        "action": "PREPARE",
+        "day": 3,
+        "evidence_ids": [],
+        "blocked_steps": "制作属性核对清单；不提交上架，逐项标出待核实字段。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "准备素材",
+        "steps": "手机固定机位；拍放线、取线、量尺寸；给未测试表面贴待测标记。",
+        "materials": "手机、样品、卡尺、桌面",
+        "done": "每个主张有对应镜头；未知效果未写入字幕。",
+        "caution": "同一条件拍摄，禁止伪造对比。",
+        "action": "PREPARE",
+        "day": 4,
+        "evidence_ids": [],
+        "blocked_steps": "准备样品测试方案；若无样品，记录未测试，不编拍摄结果。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "制作首批笔记",
+        "steps": "选痛点、教程、适配筛选三个角度；每篇只测试一个主要问题。",
+        "materials": "三套素材、选题表",
+        "done": "三篇有不同目的，标题不承诺未测效果。",
+        "caution": "不把拍摄计划写成亲测经历。",
+        "action": "PREPARE",
+        "day": 5,
+        "evidence_ids": [],
+        "blocked_steps": "仅保留选题草稿，把所有效果句改为待测试问题。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "发布小规模测试",
+        "steps": "确认三门仍通过；人工发布首篇，再安排其余两篇；逐篇记录发布时间与可见指标。",
+        "materials": "准入核验、笔记稿、数据表",
+        "done": "每篇有ID和统计口径；不可见指标留空。",
+        "caution": "不为凑日程越过核验门。",
+        "action": "PUBLISH",
+        "day": 6,
+        "evidence_ids": [],
+        "blocked_steps": "检查阻塞项是否已解决；未解决继续暂停上架及带货发布。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "goal": "第一次复盘",
+        "steps": "按相同观察窗口对照三种角度；检查咨询中的适配问题；核对订单贡献利润。",
+        "materials": "数据表、实际结算、咨询原话",
+        "done": "选出下轮只改变的一个变量；无订单不虚算转化。",
+        "caution": "数据量不足时写未定，不判断失败。",
+        "action": "REVIEW",
+        "day": 7,
+        "evidence_ids": [],
+        "blocked_steps": "汇总证据缺口与已花预算，决定缩减、继续核验或停止。",
+        "blocked_done": "形成可追溯的核验记录；未解决项有负责人/来源，不发生上架及带货发布。",
+        "execution": "条件具备后执行"
+      }
+    ],
+    "phases": [
+      {
+        "period": "1-7",
+        "goal": "准备与验证",
+        "steps": "执行首周清单；先核对费用与三道风险门，再安排内容。",
+        "materials": "核验清单、数据表、订单结算、预算记录",
+        "done": "核验通过或明确暂停原因；草稿和素材可追溯。",
+        "caution": "无统一成功点击率，不承诺周期内出单。",
+        "action": "VERIFY",
+        "evidence_ids": [],
+        "blocked_steps": "只补齐成本、准入、履约与样品证据，复查预算；不投入带货发布或库存。",
+        "blocked_done": "阻塞项有新证据则重新诊断；无证据则维持暂停，记录停止/继续核验理由。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "period": "8-14",
+        "goal": "内容测试",
+        "steps": "沿用首周角度，每轮只改变场景、标题或封面中的一个变量，记录同窗口数据。",
+        "materials": "核验清单、数据表、订单结算、预算记录",
+        "done": "每篇记录角度、变量、观察窗口及实际可见数据。",
+        "caution": "无统一成功点击率，不承诺周期内出单。",
+        "action": "PUBLISH",
+        "evidence_ids": [],
+        "blocked_steps": "只补齐成本、准入、履约与样品证据，复查预算；不投入带货发布或库存。",
+        "blocked_done": "阻塞项有新证据则重新诊断；无证据则维持暂停，记录停止/继续核验理由。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "period": "15-21",
+        "goal": "优化迭代",
+        "steps": "按自身内容对照选择一个方向；核查适配类咨询；实际订单重算贡献利润。",
+        "materials": "核验清单、数据表、订单结算、预算记录",
+        "done": "保留选择理由与反例，未获得足够数据则继续观察而非断言有效。",
+        "caution": "无统一成功点击率，不承诺周期内出单。",
+        "action": "REVIEW",
+        "evidence_ids": [],
+        "blocked_steps": "只补齐成本、准入、履约与样品证据，复查预算；不投入带货发布或库存。",
+        "blocked_done": "阻塞项有新证据则重新诊断；无证据则维持暂停，记录停止/继续核验理由。",
+        "execution": "条件具备后执行"
+      },
+      {
+        "period": "22-30",
+        "goal": "阶段决策",
+        "steps": "比较实际支出与预算；检查退款损耗；依据证据决定继续、改价或停止。",
+        "materials": "核验清单、数据表、订单结算、预算记录",
+        "done": "输出继续/调整/停止及原因；未验证的市场假设保持未验证。",
+        "caution": "无统一成功点击率，不承诺周期内出单。",
+        "action": "REVIEW",
+        "evidence_ids": [],
+        "blocked_steps": "只补齐成本、准入、履约与样品证据，复查预算；不投入带货发布或库存。",
+        "blocked_done": "阻塞项有新证据则重新诊断；无证据则维持暂停，记录停止/继续核验理由。",
+        "execution": "条件具备后执行"
+      }
+    ],
+    "listing": {
+      "titles": [
+        "硅胶桌面理线夹 6枚装 单孔线材整理配件",
+        "桌面线头整理夹 硅胶6枚装",
+        "单孔理线夹 6枚装 桌面线材配件"
+      ],
+      "hero": "浅色背景斜放6枚实物；旁放尺子显示真实尺寸，避免比例误导。",
+      "sku": "先做已确认的6枚单规格，不建议未核算的新套餐。买二送一时进货按实际发出三份算，收入按两份扣优惠算。",
+      "detail_order": "购买理由假设→使用场景→已确认特点→实际规格→放取方法→适配边界→真实发货与售后条款。",
+      "prohibited": "不写永不掉落、所有桌面通用、无痕无残胶、销量第一或伪造亲测。"
+    }
+  },
+  "computed": {
+    "decision": "B",
+    "label": "谨慎测试",
+    "reasons": [
+      "基本经营条件具备，但证据覆盖、保守利润、样品或预算仍需谨慎验证"
+    ],
+    "scores": {
+      "demand": {
+        "level": 3,
+        "points": 15.0
+      },
+      "profit": {
+        "level": 4,
+        "points": 20.0
+      },
+      "operations": {
+        "level": 3,
+        "points": 15.0
+      },
+      "content": {
+        "level": 3,
+        "points": 11.25
+      },
+      "competition": {
+        "level": null,
+        "points": null
+      },
+      "risk": {
+        "level": 3,
+        "points": 7.5
+      }
+    },
+    "assessed_weight": 85,
+    "subtotal": 68.75,
+    "total": null,
+    "profits": {
+      "optimistic": {
+        "complete": true,
+        "missing": [],
+        "contribution": 11.0,
+        "gross": 15.9,
+        "margin": 55.28,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      },
+      "base": {
+        "complete": true,
+        "missing": [],
+        "contribution": 8.5,
+        "gross": 15.9,
+        "margin": 42.71,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      },
+      "conservative": {
+        "complete": true,
+        "missing": [],
+        "contribution": 5.3,
+        "gross": 15.9,
+        "margin": 26.63,
+        "assumed": true,
+        "basis": "全部为演示假设；每单6枚，包邮，收入已扣优惠。不同情景仅变化获客与售后损耗，不是平台费率。"
+      }
+    },
+    "publish_ready": true
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "product": {
+    "name": "截图中的桌面理线夹 · 初步诊断",
+    "fields": {
+      "category": {
+        "text": "桌面理线收纳配件",
+        "kind": "INFERENCE",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "use": {
+        "text": "资料卡写明用于整理线材",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "规格": {
+        "text": "资料卡写明6枚装、硅胶、单孔；不是独立材质检测",
+        "kind": "FACT",
+        "evidence_ids": [
+          "IMG"
+        ]
+      },
+      "成本售价": {
+        "text": "图片未提供",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      },
+      "资质": {
+        "text": "图片未提供",
+        "kind": "UNKNOWN",
+        "evidence_ids": []
+      }
+    }
+  },
+  "decision": {
+    "decision": "D",
+    "label": "信息不足，暂缓决策",
+    "reasons": [
+      "关键成本、产品用途、准入或履约证据不足，暂缓经营决策"
+    ],
+    "scores": {
+      "demand": {
+        "level": null,
+        "points": null
+      },
+      "profit": {
+        "level": null,
+        "points": null
+      },
+      "operations": {
+        "level": null,
+        "points": null
+      },
+      "content": {
+        "level": 2,
+        "points": 7.5
+      },
+      "competition": {
+        "level": null,
+        "points": null
+      },
+      "risk": {
+        "level": null,
+        "points": null
+      }
+    },
+    "assessed_weight": 15,
+    "subtotal": 7.5,
+    "total": null,
+    "profits": {
+      "optimistic": {
+        "complete": false,
+        "missing": [
+          "revenue",
+          "purchase",
+          "shipping_packaging",
+          "platform_payment",
+          "acquisition",
+          "after_sales",
+          "other"
+        ],
+        "contribution": null,
+        "margin": null,
+        "gross": null,
+        "contribution_upper_bound": null,
+        "assumed": false,
+        "basis": "图片没有成本与收入信息，保留未知，不创建利润假设"
+      },
+      "base": {
+        "complete": false,
+        "missing": [
+          "revenue",
+          "purchase",
+          "shipping_packaging",
+          "platform_payment",
+          "acquisition",
+          "after_sales",
+          "other"
+        ],
+        "contribution": null,
+        "margin": null,
+        "gross": null,
+        "contribution_upper_bound": null,
+        "assumed": false,
+        "basis": "图片没有成本与收入信息，保留未知，不创建利润假设"
+      },
+      "conservative": {
+        "complete": false,
+        "missing": [
+          "revenue",
+          "purchase",
+          "shipping_packaging",
+          "platform_payment",
+          "acquisition",
+          "after_sales",
+          "other"
+        ],
+        "contribution": null,
+        "margin": null,
+        "gross": null,
+        "contribution_upper_bound": null,
+        "assumed": false,
+        "basis": "图片没有成本与收入信息，保留未知，不创建利润假设"
+      }
+    },
+    "publish_ready": false
+  },
+  "positioning": {
+    "text": "经常在桌面取放充电线且需要固定线头位置的人，真实需求待访谈。",
+    "kind": "HYPOTHESIS",
+    "evidence_ids": []
+  },
+  "direction": {
+    "text": "先观察桌面拔线后线头位置，验证整理需求。",
+    "kind": "HYPOTHESIS",
+    "evidence_ids": []
+  },
+  "evidence": [
+    {
+      "id": "IMG",
+      "type": "IMAGE",
+      "source": "原创合成商品资料卡，宿主实际查看",
+      "excerpt": "图中文字：桌面理线夹6枚装；硅胶；单孔；用于整理线材；进货成本、售价、孔径、资质未提供；长期牢固、无残胶未测试。"
+    }
+  ],
+  "boundary": "策略是假设；不把上游判断当作商品事实；不自动调用其他Skill。"
+}
